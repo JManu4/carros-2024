@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+
+/* inicia header */
+header {
+    text-align: center;
+    background-color: #E9E9E9;
+    padding: 3rem 1rem;
+    font-family: 'Manrope', sans-serif;
+    color: #222222;
+    
+}
+.headerTitulo {
+    font-weight: 700;
+}
+.headerMarcas {
+    padding-bottom: 1rem;
+}
+.headerA {
+    color: #3A3335;
+}
+.headerParrafo, .presupuesto {
+    font-size: 0.75rem;
+}
+.headerParrafo {
+    margin: 0;
+}
+/* fin header */
+
+
+
+
+/* inicio main */
+.carrCard {
+    color: #222222;
+    font-family: 'Rajdhani', sans-serif;
+    background-color: #E9E9E9;
+    max-width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 2rem 2rem 0;
+    position: relative;   
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -12px;
+    border-radius: 0.5rem;
+    /* shadow from: https://getcssscan.com/css-box-shadow-examples */
+}
+.carrNumber {
+    position: absolute;
+    padding: 0 1rem;
+    border-radius: 4px;
+    top: -15px;
+    left: -15px;
+    background-color: #E9E9E9;
+    box-shadow: rgb(38, 57, 77) 8px 8px 10px -3px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold
+}
+.imgVersa1, .imgMazda2, .imgMazda3 {
+    max-width: 100%;
+    padding: 3rem 3rem 0 0;
+    
+}
+.imgMazda2, .imgMazda3 {
+    transform: scaleX(-1);
+}
+.tituloMarcaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 0.5rem;
+    
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.carrMarca {
+    margin-bottom: 0;
+    border: 1px solid #222222;
+    border-radius: 10px;
+    padding: 0 1rem ;
+}
+.carrName {
+    margin-bottom: 0;
+    font-size: 4rem;
+}
+.carrNameLink {
+    text-decoration: none;
+    color: #222222 ;
+}
+.carrVersion {
+    margin-bottom: 0;
+}
+.precios {
+    text-align: center;
+    font-weight: bold;
+}
+.precios:hover {
+    font-size: 1.3rem;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+/* inicio main RESPONSIVE */
+@media (min-width: 600px){
+    .imgVersa1, .imgMazda2, .imgMazda3 {
+        display: block;
+        margin: 0 auto;
+    }
+    /* crear V E R S A (con espacis)*/
+}
+@media (max-width: 525px){
+    .carrCard{
+        padding-top: 0;
+    }
+    .imgVersa1, .imgMazda2, .imgMazda3 {
+        padding: 0;
+    }
+    .tituloMarcaContainer {
+        flex-direction: row;
+        align-items: center;
+        position:unset;
+        justify-content: space-between;
+    }
+    .carrMarca{
+        padding: 0 0.5rem ;
+    }
+    .carrName {
+        font-size: 3.5rem;        
+    }
+}
+@media (max-width: 425px){
+    .carrName {
+        font-size: 2rem;
+    }
+}/* fin main RESPONSIVE */
+
+
+
+
+/* fin main */
+
+
+
